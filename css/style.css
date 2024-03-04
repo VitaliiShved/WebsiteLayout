@@ -319,6 +319,7 @@ a {
     position: absolute;
     bottom: 10px;
     left: -30px;
+
 }
 
 .red-circle {
@@ -609,6 +610,7 @@ footer {
 }
 
 .privacy-policy p {
+    margin-top: 10px;
     font-size: 14px;
     color: #648b99;
 }
