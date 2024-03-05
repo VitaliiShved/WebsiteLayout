@@ -1,36 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
     font-family: 'Droid Sans', sans-serif;
 }
 
-header {
-    height: 150px;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
+main, footer, header {
     background-image: url(../img/background.png);
-}
-
-main, footer {
-    background-image: url(../img/background.png);
-}
-
-header, main, footer {
-    width: 100%;
 }
 
 a {
     text-decoration: none;
 }
 
+.wrapper {
+    width: 1015px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.content {
+    height: 120px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
 .left-header {
-    margin-left: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,10 +42,14 @@ a {
 }
 
 .right-header {
-    margin-left: 320px;
+    margin-left: 300px;
     display: flex;
-    flex-direction: column;
+
     align-items: flex-end;
+}
+
+.login {
+    text-align: right;
 }
 
 .phone-number {
@@ -113,7 +112,7 @@ a {
 
 .menu li {
     display: inline-block;
-    margin-right: 15px; 
+    margin-right: 19px; 
     color: white;
 }
 
@@ -124,7 +123,6 @@ a {
 .menu li a {
     color: white;
     font-size: 14px;
-
 }
 
 .menu li a:hover {
@@ -133,7 +131,6 @@ a {
 }
 
 .categories {
-    padding-left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,26 +164,19 @@ a {
 
 .slider {
     margin: 0 auto; 
-    width: 1050px;
-    padding-left: 50px;
+    width: 960px;
 }
 
 .carousel {
-    width: 100px;
     height: 365px;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .slick-next:before,
 .slick-prev:before {
     color: black !important;
-}
-
-.slick-prev {
-    margin-left: 50px;
 }
 
 .item {
@@ -243,16 +233,12 @@ a {
     justify-content: center;
     background-image: url(../img/background2.png);
     height: 680px;
-    gap: 80px;
-}
-
-.list-menu {
-    margin-left: 65px;
+    gap: 120px;
 }
 
 .list-menu p {
     font-size: 24px;
-    color: 333333;
+    color: #333333;
     margin-top: 25px;
     padding-left: 8px;
     font-weight: bold;  
@@ -276,7 +262,6 @@ a {
     line-height: 35px;
     padding-left: 10px;
     border-radius: 5px;
-    /* text-align: center; */
 }
 
 .list-menu a:hover {
@@ -285,7 +270,6 @@ a {
 }
 
 .photo {
-    margin-left: 50px;
     padding-top: 30px;
     padding-bottom: 150px;
     display: grid;
@@ -302,7 +286,6 @@ a {
     width: 230px;
     border: 1px solid #dddddd;
     background-color: #ffffff;
-    /*overflow: hidden;*/
 }
 
 .gray-circle-wrapper {
@@ -391,15 +374,12 @@ a {
 }
 
 .new-items {
-    padding-left: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .item-span {
-    padding-right: 830px;
     text-align: left;
     margin-top: 30px;
     font-size: 24px;
@@ -407,9 +387,9 @@ a {
 }
 
 .new-item {
-    margin-left: 70px;
     padding-top: 20px;
     display: flex;
+    justify-content: space-between;
     gap: 30px; 
     margin-bottom: 50px;
 }
@@ -443,7 +423,7 @@ a {
 
 .sale {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-image: url(../img/background.png);
     gap: 30px;
@@ -458,14 +438,11 @@ a {
 .special-offer, .adv-text {
     margin-top: 20px;
     height: 210px;
-    width: 495px;
+    width: 490px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
 }
 
-.special {
-    margin-left: 70px;
-}
 .adv div {
     background-color: #f6f6f6;
 }
@@ -585,22 +562,8 @@ a {
 .other {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 110px;
-    margin-left: 50px;
+    justify-content: space-between;
     padding-bottom: 60px;
-}
-
-footer {
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 300px;
-
-}
-
-.privacy-policy {
-    margin-left: 70px;
 }
 
 .privacy-policy span {
