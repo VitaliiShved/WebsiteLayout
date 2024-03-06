@@ -301,7 +301,6 @@ a {
     position: absolute;
     bottom: 10px;
     left: -30px;
-
 }
 
 .red-circle {
@@ -605,4 +604,39 @@ a {
 
 .youtube {
     border: 2px solid #fe0000;
+} 
+
+/* 992 - 1199 */
+@media (max-width: 1199px) {
+
+    .wrapper {
+        width: 960px;
+    }
+}
+
+/* 768 - 991 */
+@media (max-width: 991px) {
+
+    .wrapper {
+        width: 720px;
+    }
+
+}
+
+/* 576 - 767 */
+@media (max-width: 767px) {
+
+    .wrapper {
+        width: 540px;
+    }
+
+}
+
+/* < 576 */
+@media (max-width: 575px) {
+
+    .wrapper {
+        width: 100%
+    }
+
 }
