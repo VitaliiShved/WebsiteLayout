@@ -175,15 +175,10 @@ a {
 }
 
 .carousel {
-    height: 365px;
+    height: 360px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.slick-next:before,
-.slick-prev:before {
-    color: black !important;
 }
 
 .item {
@@ -1305,6 +1300,11 @@ a {
     .special span, .adv span {
         font-size: 10px;
         font-weight: bold;
+    }
+
+    .slick-prev, .slick-next {
+        position: absolute;
+        left: -9999px; 
     }
 
     .special-offer, .adv-text {
